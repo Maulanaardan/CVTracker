@@ -9,7 +9,7 @@ Aplikasi ini dikembangkan sebagai bagian dari **Tugas UAS** dengan objektif mata
 ## 🚀 Fitur Utama
 
 - 📄 **Input CV (Resume)**  
-  Pengguna dapat memasukkan teks CV secara langsung ke dalam aplikasi.
+  Pengguna dapat memasukkan file CV secara langsung ke dalam aplikasi.
 
 - 🧾 **Input Job Description**  
   Pengguna dapat memasukkan deskripsi pekerjaan yang ingin dilamar.
@@ -45,7 +45,7 @@ Aplikasi ini dikembangkan sebagai bagian dari **Tugas UAS** dengan objektif mata
 - **Frontend:** HTML, CSS, JavaScript  
 - **Backend:** Node.js, Express.js  
 - **AI Engine:** OpenRouter API  
-- **Model AI:** LLaMA 3 8B Instruct  
+- **Model AI:** meta-llama/llama-3-8b-instruct:free 
 - **AI Integration:** REST API  
 - **Server:** Localhost (tanpa database / stateless application)
 
