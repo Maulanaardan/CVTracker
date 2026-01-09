@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+    </div>
+
+    <div class="glass-container">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-robot"></i>
+                <span>CV INTELLIGENCE</span>
+            </div>
+            <p class="subtitle">Optimize your career potential with AI-driven analysis</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="cvFile"><i class="fa-solid fa-file-pdf"></i> Upload Resume / CV (PDF)</label>
+                    <div class="file-upload-wrapper">
+                        <input type="file" id="cvFile" accept=".pdf">
+                        <div class="file-upload-placeholder">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                            <span>Click to upload PDF or drag and drop</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="jobDescription"><i class="fa-solid fa-briefcase"></i> Job Description</label>
+                    <textarea id="jobDescription" placeholder="Paste the job description here..."></textarea>
+                </div>
+            </div>
+
+            <button id="analyzeBtn" class="analyze-btn">
+                <span>Analyze match</span>
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </button>
+
+            <div id="loader" class="loader hidden">
+                <div class="spinner"></div>
+                <p>Analyzing profiles with Gemini AI...</p>
+            </div>
+
+            <div id="resultSection" class="result-section hidden">
+                <div class="score-card">
+                    <h2>Match Score</h2>
+                    <div class="circular-chart" id="scoreChart">
+                        <svg viewBox="0 0 36 36" class="circular-chart-svg">
+                            <path class="circle-bg" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" id="scoreCircle" stroke-dasharray="0, 100" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <span class="percentage" id="scoreText">0%</span>
+                    </div>
+                </div>
+
+                <div class="analysis-grid">
+                    <div class="card summary-card">
+                        <h3><i class="fa-solid fa-align-left"></i> Summary</h3>
+                        <p id="summaryText">Analysis summary will appear here.</p>
+                    </div>
+
+                    <div class="card recommendation-card">
+                        <h3><i class="fa-solid fa-lightbulb"></i> Recommendation</h3>
+                        <p id="recommendationText">Recommendations will appear here.</p>
+                    </div>
+
+                    <div class="card skills-card matched">
+                        <h3><i class="fa-solid fa-check-circle"></i> Matched Skills</h3>
+                        <ul id="matchedSkillsList"></ul>
+                    </div>
+
+                    <div class="card skills-card missing">
+                        <h3><i class="fa-solid fa-circle-exclamation"></i> Missing Skills</h3>
+                        <ul id="missingSkillsList"></ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
