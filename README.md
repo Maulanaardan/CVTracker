@@ -2,7 +2,7 @@
 
 AI CV Tracker adalah aplikasi berbasis web yang membantu pengguna menganalisis tingkat kecocokan antara CV (Resume) dengan Job Description menggunakan Artificial Intelligence (Large Language Model).
 
-Aplikasi ini dikembangkan sebagai bagian dari **Tugas UAS** dengan objektif mata kuliah **“Integrate Application with AI”**.
+Aplikasi ini dikembangkan sebagai bagian dari **Tugas UAS** dengan objektif mata kuliah **“Kecerdasan Buatan”**.
 
 ---
 
@@ -112,6 +112,6 @@ http://localhost:3000
 - **Nama:** Maulana Luthfi Wardana  
 - **NIM:** 23121049  
 - **Project:** AI CV TRACKER 
-- **Keterangan:** Tugas Ujian Akhir Semester (UAS) – Integrate Application with AI
+- **Keterangan:** Tugas Ujian Akhir Semester (UAS) – Kecerdasan Buatan
 
 
